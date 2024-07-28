@@ -16,9 +16,14 @@
             </div>
         </div>
 
-        <form hx-post="/question" hx-target="#response" hx-swap="outerHTML">
+        <form hx-trigger="submit" hx-post="/question" hx-target="#response" hx-swap="outerHTML">
             <div class="d-flex">
-                <input type="text" class="form-control mb-3 mx-3 w-75" name="question" placeholder="Introduce tu mensaje...">
+                <input 
+                    type="text" 
+                    class="form-control mb-3 mx-3 w-75"
+                    name="question" 
+                    hx-on:after-request="this.reset()"
+                    placeholder="Introduce tu mensaje...">
                 <button type="submit" class="btn btn-primary mx-3 w-25 h-75">Enviar</button>
             </div>
         </form>
