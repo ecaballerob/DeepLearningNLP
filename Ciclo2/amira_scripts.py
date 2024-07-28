@@ -147,7 +147,7 @@ def main():
         )
     pickle.dump(
         model,
-        open('conversations_model.plk', 'wb')
+        open('conversations_model.pkl', 'wb')
         )
 
 if __name__ == "__main__":

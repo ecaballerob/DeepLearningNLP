@@ -236,6 +236,21 @@
         ]
     },
     {
+        "tag": "ofiuco",
+        "patterns": [
+            "mi signo es ofiuco",
+            "ofiuco",
+            "soy ofiuco",
+            "signo ofiuco"
+        ],
+        "responses": [
+            "Amor: Tu pareja necesita de ese don por el que se enamoro de ti: tu serenidad. Lo último que necesita de ti son reproches y cuestionamientos. Aunque puedas ver con claridad cuál es su problema verdadero, ella no puede. Parte de toda relación es el apoyo emocional que nos brindamos, y que no puedes escatimar.",
+            "Salud: ¿Estás en lo cierto o estás equivocado? Eso carece de importancia. Lo que cuenta es que hay gente en tu vida que te cuestiona y acorrala. No parece darse cuenta de que te hace daño al ponerte en duda, y que más que discusiones, necesitas apoyo. Es una buena medida poner distancia entre esa persona y tú, por un tiempo. ",
+            "Trabajo: Te preguntas si debes permanecer en el sitio en el que te encuentras o si des hora es probar una nueva aventura. Los astros creen que debes permanecer ahí, pues aún no has cumplido con tu ciclo, y ese sitio aún puede brindarte grandes satisfacciones, de la misma manera que tú puedes brindarle grandes servicios todavía.",
+            "Color de la suerte: Ofiuco encuentra tu suerte en el turquesa refrescante hoy. Este tono simboliza la innovación y la libertad, brindándote la inspiración necesaria para seguir tus instintos creativos. Utiliza este color para romper barreras y experimentar el éxito en nuevas empresas."
+        ]
+    },
+    {
         "tag": "opciones_horoscopo",
         "patterns": [
             "quiero saber mi horoscopo",
