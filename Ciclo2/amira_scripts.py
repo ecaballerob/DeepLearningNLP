@@ -58,6 +58,11 @@ def main():
     with open('conversations_category_answers.json', 'w') as file:
         json.dump(category_answers, file)
 
+    pickle.dump(
+        category_answers,
+        open('conversations_category_answers.pkl', 'wb')
+        )
+
     questions = []
 
     for script in conversations:
@@ -136,9 +141,13 @@ def main():
     hist = model.fit(
         X_train,
         Y_train,
-        epochs=500,
-        batch_size=100,
+        epochs=2500,
+        batch_size=1000,
         verbose=0
+        )
+    pickle.dump(
+        model,
+        open('conversations_model.plk', 'wb')
         )
 
 if __name__ == "__main__":
