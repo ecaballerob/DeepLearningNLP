@@ -1,0 +1,27 @@
+
+{% extends 'base.html' %}
+
+{% block content %} 
+  <div class="container mt-2">
+        <h2 class="text-center mb-2">ChatBot de la Medium Amira Rashid</h2>
+
+        <div class="card overflow-auto mx-3" style="height: 500px">
+            <div class="card-body">
+
+                <p>
+                    ChatBot: Hola, bienvenido al ChatBot de la Medium Amira Rashid! Enviame un mensaje de texto para que interactuemos. 😄 
+                </p>
+                <div id="response"></div>
+
+            </div>
+        </div>
+
+        <form hx-post="/question" hx-target="#response" hx-swap="outerHTML">
+            <div class="d-flex">
+                <input type="text" class="form-control mb-3 mx-3 w-75" name="question" placeholder="Introduce tu mensaje...">
+                <button type="submit" class="btn btn-primary mx-3 w-25 h-75">Enviar</button>
+            </div>
+        </form>
+
+    </div>
+{% endblock %}
